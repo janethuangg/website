@@ -35,6 +35,8 @@ export const TitleComponent = styled.div`
   font-weight: 400;
   margin-left: 5rem;
   text-align: left;
+  text-decoration: underline #fcd864;
+  text-underline-position: under;
   @media (max-width: ${breakpoints.mobileMax}) {
     text-align: center;
   }
