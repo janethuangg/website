@@ -30,6 +30,7 @@ const useStyles = makeStyles(theme => ({
   details: {
     display: "flex",
     flexDirection: "column",
+    width: "25vw",
   },
   content: {
     flex: "1 0 auto",
@@ -43,47 +44,20 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: theme.spacing(1),
     paddingBottom: theme.spacing(1),
   },
-  playIcon: {
-    height: 30,
-    width: 30,
-  },
 }))
 
-const ProjectCard = ({ title, subtitle, description, image }) => {
+const ProjectCard = ({
+  title,
+  subtitle,
+  description,
+  image,
+  github,
+  website,
+}) => {
   const classes = useStyles()
   const theme = useTheme()
-
+  console.log(website)
   return (
-    // <Card className={classes.root}>
-    //   {/* <CardActionArea> */}
-    //   <CardMedia
-    //     className={classes.media}
-    //     image={require("../images/baking.png")}
-    //     title={title}
-    //   />
-    //   <CardContent>
-    //     <Typography variant="h5" component="h2">
-    //       {title}
-    //     </Typography>
-    //     <Typography color="textSecondary" style={{ marginBottom: 12 }}>
-    //       {subtitle}
-    //     </Typography>
-    //     <Typography variant="body2" component="p">
-    //       well meaning and kindly.
-    //       <br />
-    //       {'"a benevolent smile"'}
-    //     </Typography>
-    //   </CardContent>
-    //   {/* </CardActionArea> */}
-    //   <CardActions>
-    //     <Button size="small" color="primary">
-    //       Share
-    //     </Button>
-    //     <Button size="small" color="primary">
-    //       Learn More
-    //     </Button>
-    //   </CardActions>
-    // </Card>
     <Card className={classes.root}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
@@ -98,12 +72,27 @@ const ProjectCard = ({ title, subtitle, description, image }) => {
           </Typography>
         </CardContent>
         <div className={classes.controls}>
-          <IconButton aria-label="github">
-            <GitHubIcon />
-          </IconButton>
-          <IconButton aria-label="web">
-            <WebIcon />
-          </IconButton>
+          {github !== undefined ? (
+            <IconButton
+              aria-label="github"
+              onClick={() => window.open(github, "_blank")}
+            >
+              <GitHubIcon />
+            </IconButton>
+          ) : (
+            console.log("empty")
+          )}
+
+          {website !== undefined ? (
+            <IconButton
+              aria-label="website"
+              onClick={() => window.open(website, "_blank")}
+            >
+              <WebIcon />
+            </IconButton>
+          ) : (
+            console.log("empty")
+          )}
         </div>
       </div>
       <CardMedia

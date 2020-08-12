@@ -61,31 +61,37 @@ const Project = () => {
             title="Chikin Tinder"
             subtitle="React Native App"
             image="icon.png"
+            github="https://github.com/summer-hacks/Food-Picker"
             description='swipe your way to answering "where should we eat"'
           ></ProjectCard>
           <ProjectCard
             title="Leeting Logs"
             subtitle="MERN Website"
             image="leet.png"
+            github="https://github.com/janethuangg/leeting"
             description="organize & analyze your technical interview prep"
           ></ProjectCard>
           <ProjectCard
             title="Patissier Pal"
             subtitle="Flask Website"
             image="baking.png"
+            github="https://github.com/janethuangg/patissier-pal"
             description="figure out which YouTube baking vids you can follow"
+            website="https://patissier-pal.herokuapp.com/"
           ></ProjectCard>
           <ProjectCard
             title="Kickstarter"
             subtitle="Jupyter Notebook"
             image="kick.png"
-            description="predict whether your Kickstarter campaign will succeed"
+            github="https://github.com/janethuangg/bac-insight-team"
+            description="predict whether your Kickstarter project will succeed"
           ></ProjectCard>
           <ProjectCard
             title="Take Three"
             subtitle="Figma Prototype"
             image="celeb.png"
             description="celebrate your daily small wins to beat impostor syndrome"
+            website="https://www.notion.so/janethuang/take-three-9e2d0b5d20e74e9b822369a73a01382e"
           ></ProjectCard>
         </Grid>
       </SubSection>

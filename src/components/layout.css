@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
 html {
-  font-family: sans-serif;
+  font-family: "Nunito";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   border: solid 10px #fcd864;

@@ -23,9 +23,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           <Footer />
-        </footer>
+        </footer> */}
       </div>
     </>
   )
