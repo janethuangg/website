@@ -24,8 +24,8 @@ const About = () => {
               </ListItem>
               <ListItem>
                 <b>What's coming up?</b> This fall, I'll be serving as a
-                Teaching Fellow for both sessions of an appListItemed data
-                science course called{" "}
+                Teaching Fellow for both sessions of an applied data science
+                course called{" "}
                 <a href="https://github.com/asiegman16/NYU_ProjectsinProgramming_Fall2020">
                   Projects in Programming
                 </a>

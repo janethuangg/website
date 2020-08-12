@@ -3,7 +3,7 @@ import { breakpoints } from "./shared/Media"
 
 export const Section = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -17,7 +17,7 @@ export const Section = styled.div`
 
 export const SubSection = styled.div`
   width: 100%;
-  height: 75vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   flex-direction: row;
