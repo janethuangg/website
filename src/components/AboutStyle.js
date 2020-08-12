@@ -1,19 +1,7 @@
 import styled from "styled-components"
 import { breakpoints } from "./shared/Media"
 
-export const AboutSub = styled.div`
-  width: 100%;
-  height: 75vh;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-around;
-  background: #fff;
-  @media (max-width: ${breakpoints.mobileMax}) {
-    flex-direction: column;
-    justify-content: center;
-  }
-`
+
 export const ImageWrapper = styled.div`
   max-width: 100%;
   display: flex;

@@ -40,7 +40,7 @@ const Menu = () => {
             </ScrollIntoView>
             <ScrollIntoView selector="#project">
               <Item>
-                <NavLink>Project</NavLink>
+                <NavLink>Projects</NavLink>
               </Item>
             </ScrollIntoView>
           </NavItem>
