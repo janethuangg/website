@@ -13,7 +13,6 @@ export const Navbar = styled.div`
   color: #fff;
   height: 5rem;
   @media (max-width: ${breakpoints.mobileMax}) {
-    display: none;
   }
 `
 export const NavWrapper = styled.div`
@@ -22,6 +21,10 @@ export const NavWrapper = styled.div`
   align-items: center;
   flex: 1 1 0%;
   padding: 0 50px;
+  @media (max-width: ${breakpoints.mobileMax}) {
+    padding: 0;
+    flex: 0;
+  }
 `
 export const NavBrand = styled.div`
   flex: 1 1 0%;
@@ -38,6 +41,7 @@ export const Nav = styled.nav`
   -webkit-box-pack: center;
   justify-content: center;
   height: auto;
+  align-self: center;
 `
 export const NavItem = styled.ul`
   margin: 0;
@@ -47,6 +51,7 @@ export const NavItem = styled.ul`
   display: flex;
   justify-content: center;
   margin-left: 15px;
+  text-align: center;
 `
 export const Item = styled.li`
   font-size: 1rem;
@@ -55,6 +60,10 @@ export const Item = styled.li`
   cursor: pointer;
   &:hover {
     color: #70d9e6;
+  }
+  @media (max-width: ${breakpoints.mobileMax}) {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 `
 export const NavLink = styled.a`
