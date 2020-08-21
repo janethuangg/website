@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { breakpoints } from "../shared/Media"
 
 export const Navbar = styled.div`
   display: flex;
@@ -11,6 +12,9 @@ export const Navbar = styled.div`
   justify-content: center;
   color: #fff;
   height: 5rem;
+  @media (max-width: ${breakpoints.mobileMax}) {
+    display: none;
+  }
 `
 export const NavWrapper = styled.div`
   display: flex;
@@ -22,8 +26,10 @@ export const NavWrapper = styled.div`
 export const NavBrand = styled.div`
   flex: 1 1 0%;
   color: #2d2d2d;
-  font-style: italic;
   margin-top: 5%;
+  @media (max-width: ${breakpoints.mobileMax}) {
+    display: none;
+  }
 `
 export const Nav = styled.nav`
   display: flex;

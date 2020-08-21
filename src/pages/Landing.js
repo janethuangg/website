@@ -1,6 +1,6 @@
 import React from "react"
 import { Heading, Name, Subtitle } from "../components/Heading/HeadStyle"
-import { Image } from "../components/shared/Image"
+import { Image } from "../components/Common"
 import { useStaticQuery, graphql } from "gatsby"
 import Grid from "@material-ui/core/Grid"
 import Paper from "@material-ui/core/Paper"
@@ -90,12 +90,14 @@ const Landing = () => {
             </IconButton>
           </Grid>
         </Grid>
+        <Image
+          style={{ borderRadius: "100%" }}
+          src={require("../images/janet.jpg")}
+        />
         <Subtitle>
           "Huang" directly translates to yellow, a color I associate with warmth
           + happiness
         </Subtitle>
-        <Image height="33vh" src={require("../images/tonton.gif")} />
-        <Subtitle>– open on desktop for a better viewing experience –</Subtitle>
       </div>
     </Heading>
   )

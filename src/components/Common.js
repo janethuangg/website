@@ -34,10 +34,32 @@ export const TitleComponent = styled.div`
   font-family: "Nunito";
   font-weight: 400;
   margin-left: 5rem;
-  text-align: left;
+  margin-bottom: 1vh;
+  text-align: center;
   text-decoration: underline #fcd864;
   text-underline-position: under;
   @media (max-width: ${breakpoints.mobileMax}) {
-    text-align: center;
+    align-self: center;
+    margin-left: 0rem;
+    margin-bottom: 2vh;
+  }
+`
+
+export const ExtraImage = styled.img`
+  width: ${props => props.width};
+  height: ${props => props.height};
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  @media (max-width: ${breakpoints.mobileMax}) {
+    display: none;
+  }
+`
+export const Image = styled.img`
+  max-width: 25%;
+  border-radius: "100";
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  @media (max-width: ${breakpoints.mobileMax}) {
+    max-width: 50%;
   }
 `

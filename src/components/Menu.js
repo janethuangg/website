@@ -26,7 +26,7 @@ const Menu = () => {
       <NavWrapper>
         <NavBrand>
           <img
-            style={{ width: 100, marginLeft: 0 }}
+            style={{ width: "20%", marginLeft: 0, alignSelf: "center" }}
             src={require("../images/logo.svg")}
           ></img>
         </NavBrand>

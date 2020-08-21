@@ -1,9 +1,13 @@
 import React from "react"
 import { Text, TextWrapper } from "../components/shared/TextWrapper"
 import { List, ListItem, ImageWrapper } from "../components/AboutStyle"
-import { Section, TitleComponent, SubSection } from "../components/Common"
+import {
+  Section,
+  TitleComponent,
+  SubSection,
+  ExtraImage,
+} from "../components/Common"
 import { useStaticQuery, graphql } from "gatsby"
-import { Image } from "../components/shared/Image"
 
 const About = () => {
   return (
@@ -44,10 +48,10 @@ const About = () => {
           </Text>
         </TextWrapper>
         <ImageWrapper>
-          <Image
-            width="33vw"
+          <ExtraImage
+            width="30vw"
             style={{ borderRadius: "10%", marginTop: "-5%" }}
-            src={require("../images/janet.jpg")}
+            src={require("../images/tonton.gif")}
           />
         </ImageWrapper>
       </SubSection>

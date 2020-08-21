@@ -9,7 +9,6 @@ export const Text = styled.div`
   line-height: 1.4rem;
   padding: 0 6rem;
   @media (max-width: ${breakpoints.mobileMax}) {
-    font-size: 0.8rem;
     padding: 0 3rem;
   }
 `

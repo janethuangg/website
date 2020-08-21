@@ -30,4 +30,5 @@ export const Subtitle = styled.h3`
   opacity: 0.8;
   font-weight: 400;
   text-align: center;
+  width: 80%;
 `
