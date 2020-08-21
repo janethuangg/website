@@ -65,6 +65,7 @@ const Project = () => {
             subtitle="Jupyter Notebook"
             image="kick.png"
             github="https://github.com/janethuangg/bac-insight-team"
+            website="https://drive.google.com/file/d/14KF2GcdZ0w1lBvgcQIfW-gV1DVT-IYeD/view?usp=sharing"
             description="predict whether your Kickstarter project will succeed"
           ></ProjectCard>
           <ProjectCard
