@@ -13,6 +13,7 @@ export const Navbar = styled.div`
   color: #fff;
   height: 5rem;
   @media (max-width: ${breakpoints.mobileMax}) {
+    display: none;
   }
 `
 export const NavWrapper = styled.div`

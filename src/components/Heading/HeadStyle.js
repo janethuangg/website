@@ -13,6 +13,7 @@ export const Heading = styled.div`
   @media (max-width: ${breakpoints.mobileMax}) {
     flex-direction: column;
     justify-content: center;
+    margin-top: 0;
   }
 `
 export const Name = styled.h1`

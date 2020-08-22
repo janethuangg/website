@@ -7,7 +7,6 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-
 import "./layout.css"
 import Menu from "./Menu"
 import Footer from "./Footer"
