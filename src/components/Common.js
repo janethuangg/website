@@ -40,8 +40,9 @@ export const TitleComponent = styled.div`
   text-underline-position: under;
   @media (max-width: ${breakpoints.mobileMax}) {
     align-self: center;
-    margin-left: 0rem;
-    margin-bottom: 2vh;
+    margin-left: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
 `
 

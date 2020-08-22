@@ -14,12 +14,12 @@ export const Grid = styled.div`
 
   @media (max-width: 960px) {
     grid-template-columns: repeat(2, 1fr);
-    width: 85vw;
+    width: 80vw;
   }
 
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
-    width: 85vw;
+    width: 80vw;
   }
 `
 
