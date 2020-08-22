@@ -9,7 +9,7 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 import FacebookIcon from "@material-ui/icons/Facebook"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import EmailIcon from "@material-ui/icons/Email"
-
+import { Section } from "../components/Common"
 import IconButton from "@material-ui/core/IconButton"
 
 const useStyles = makeStyles(theme => ({
@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   paper: {
-    padding: theme.spacing(2),
+    // padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
   },
@@ -33,7 +33,7 @@ const Landing = () => {
   const classes = useStyles()
 
   return (
-    <Heading>
+    <Section>
       <div className={classes.centeredBox}>
         <Name>Janet Huang</Name>
         <Grid
@@ -99,7 +99,7 @@ const Landing = () => {
           + happiness
         </Subtitle>
       </div>
-    </Heading>
+    </Section>
   )
 }
 export default Landing

@@ -17,6 +17,10 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  color: black;
+}
+
 /* visited link */
 a:visited {
   color: black;

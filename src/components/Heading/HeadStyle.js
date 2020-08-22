@@ -23,6 +23,10 @@ export const Name = styled.h1`
   font-weight: 600;
   text-align: center;
   margin-bottom: 0;
+  margin-top: -15vh;
+  @media (max-width: ${breakpoints.mobileMax}) {
+    margin-top: -10vh;
+  }
 `
 export const Subtitle = styled.h3`
   font-size: 1.3rem;
